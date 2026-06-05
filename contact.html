@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width         2wwwwwwwws>
+  <meta name="description" content="Contact VINOTHINI M through an accessible, keyboard-friendly contact form.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="VINOTHINI M">
+  <link rel="canonical" href="https://example.com/contact.html">
+  <title>Contact | VINOTHINI M</title>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-label="VINOTHINI M home">VINOTHINI M</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Contact</h1>
+
+      <form action="/submit" method="post" aria-labelledby="contact-form-heading">
+        <h2 id="contact-form-heading">Send a message</h2>
+
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div>
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" autocomplete="off" required>
+        </div>
+
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      <p>Email: <a href="mailto:25cs303@kpriet.ac.in">25cs303@kpriet.ac.in</a></p>
+    </address>
+  </footer>
+</body>
+</html>
