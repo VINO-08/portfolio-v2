@@ -1,44 +1,68 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width>
+  <meta name="description" content="Vinothini M's accessible portfolio showcasing semantic HTML5, accessibility, and front-end development work.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="VINOTHINI M">
+  <link rel="canonical" href="https://example.com/index.html">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="VINOTHINI M | Portfolio">
+  <meta property="og:description" content="Accessible, semantic, and SEO-friendly personal portfolio website.">
+  <meta property="og:url" content="https://example.com/index.html">
+  <title>VINOTHINI M | Portfolio</title>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <div class="container">
-        <h1>To-Do List</h1>
+  <header>
+    <nav aria-label="Primary">
+      <a href="index.html" aria-label="VINOTHINI M home">VINOTHINI M</a>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <div class="input-container">
-            <input
-                type="text"
-                id="taskInput"
-                placeholder="Enter a new task..."
-            >
+  <main id="main-content">
+    <section aria-labelledby="hero-heading">
+      <h1 id="hero-heading">Web Developer Portfolio</h1>
+      <p>I build semantic, accessible, SEO-friendly websites and applications.</p>
+    </section>
 
-            <button id="addBtn">Add Task</button>
-        </div>
+    <section aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Featured Work</h2>
 
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">
-                All
-            </button>
+      <article aria-labelledby="project-one-title">
+        <h3 id="project-one-title"><a href="projects.html#project-1">Accessible Portfolio Site</a></h3>
+        <p>A multi-page portfolio foundation with strong landmarks, skip links, and keyboard support.</p>
+      </article>
 
-            <button class="filter-btn" data-filter="active">
-                Active
-            </button>
+      <article aria-labelledby="project-two-title">
+        <h3 id="project-two-title"><a href="projects.html#project-2">Accessible Contact Form</a></h3>
+        <p>A form built with explicit labels, logical tab order, and clear instructions.</p>
+      </article>
+    </section>
 
-            <button class="filter-btn" data-filter="completed">
-                Completed
-            </button>
-        </div>
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>Semantic HTML5</li>
+        <li>WCAG accessibility</li>
+        <li>SEO fundamentals</li>
+      </ul>
+    </section>
+  </main>
 
-        <ul id="taskList"></ul>
-    </div>
-
-    <script src="script.js"></script>
-
+  <footer>
+    <address>
+      <p>Email: <a href="mailto:25cs303@kpriet.ac.in">25cs303@kpriet.ac.in</a></p>
+      <p>Coimbatore, Tamil Nadu, India</p>
+    </address>
+  </footer>
 </body>
 </html>
