@@ -151,9 +151,9 @@ taskList.addEventListener("click", function (e) {
 // Filter Buttons
 filterBtns.forEach(button => {
     button.addEventListener("click", () => {
-        filterBtns.forEach(btn =>
-            btn.classList.remove("active")
-        );
+        filterBtns.forEach(btn => {
+            btn.classList.remove("active");
+        });
 
         button.classList.add("active");
 
